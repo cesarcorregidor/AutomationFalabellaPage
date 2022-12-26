@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="validate elements" skipped="0" tests="1" time="34.79" timestamp="2022-12-25 06:19:11"><testcase name="add product to cart and validate home page"><failure message="&#10;Expected: an element that is present&#10;     but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present" type="java.lang.AssertionError">
+Expected: an element that is present
+     but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present</failure><system-err>
+Expected: an element that is present
+     but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present&#13;
+co.com.falabella.tasks.CarValidation.performAs(CarValidation.java:26)&#13;
+co.com.falabella.stepDefinitions.FbBackgroundStepDefinition.heAddARandomItemToTheCart(FbBackgroundStepDefinition.java:30)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

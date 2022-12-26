@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="validate elements" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-12-25T23:19:12" hostname="DESKTOP-B1M4PHT" time="35.204">
+  <properties/>
+  <testcase name="add product to cart and validate home page" classname="validate elements" time="35.204">
+    <failure message="java.lang.AssertionError: &#10;Expected: an element that is present&#10;     but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: an element that is present
+     but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
+	at co.com.falabella.tasks.CarValidation.performAs(CarValidation.java:26)
+	at co.com.falabella.tasks.CarValidation$$EnhancerByCGLIB$$c07b9dee.CGLIB$performAs$0(&lt;generated&gt;)
+	at co.com.falabella.tasks.CarValidation$$EnhancerByCGLIB$$c07b9dee$$FastClassByCGLIB$$7fd6738b.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at co.com.falabella.tasks.CarValidation$$EnhancerByCGLIB$$c07b9dee.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.falabella.stepDefinitions.FbBackgroundStepDefinition.heAddARandomItemToTheCart(FbBackgroundStepDefinition.java:30)
+	at ✽.he add a random item to the cart(src/test/resources/features/FbBackground.feature:8)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.22 (ec46c90f5938574604681b0a7aad76cfb5e99eb7-refs/branch-heads/5359@{#365}) on port 37101
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 25, 2022 6:19:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: add product to cart and validate home page
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Cesar car validation
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: an element that is present but: no matching element found by xpath: //div[@class='a-productName_r0j178'] was not present
+]]></system-err>
+</testsuite>
